@@ -1,0 +1,17 @@
+# Main
+spring:
+  application:
+    name: spring-boot-transactional-outbox-pattern
+  main:
+    banner-mode: "off"
+  datasource:
+    url: jdbc:postgresql://db:5432/system
+    username: root
+    password: password
+  docker:
+    compose:
+      start:
+        log-level: trace
+  sql:
+    init:
+      mode: always

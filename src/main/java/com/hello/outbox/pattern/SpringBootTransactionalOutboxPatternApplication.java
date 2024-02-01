@@ -1,11 +1,13 @@
-package com.hello.spring.boot;
+package com.hello.outbox.pattern;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.jdbc.repository.config.EnableJdbcRepositories;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
 @EnableScheduling
+@EnableJdbcRepositories
 public class SpringBootTransactionalOutboxPatternApplication {
 
 	public static void main(String[] args) {
